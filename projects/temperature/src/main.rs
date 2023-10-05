@@ -4,8 +4,8 @@ fn main() {
     println!("Enter temperature in Fahrenheit:");
 
     let fahrenheit: f32 = read_number();
+    let celsius = fahrenheit_to_celsius(fahrenheit);
 
-    let celsius = (fahrenheit - 32.0) * 5.0 / 9.0;
     println!("{}°F is {}°C", fahrenheit, celsius);
 }
 
@@ -23,4 +23,8 @@ fn read_number() -> f32 {
             },
         }
     }
+}
+
+fn fahrenheit_to_celsius(fahrenheit: f32) -> f32 {
+    (fahrenheit - 32.0) * 5.0 / 9.0
 }
