@@ -1,11 +1,14 @@
 fn main() {
     let mut x = 5;
     println!("The value of x is {x}");
-    x = 6;  // Only possible because x is mutable
+    x = 6; // Only possible because x is mutable
     println!("The value of x is {x}");
 
     const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
-    println!("The value of THREE_HOURS_IN_SECONDS is: {}", THREE_HOURS_IN_SECONDS);
+    println!(
+        "The value of THREE_HOURS_IN_SECONDS is: {}",
+        THREE_HOURS_IN_SECONDS
+    );
 
     // Shadowing
     let y = 5;
@@ -37,7 +40,7 @@ fn main() {
     println!("The value of tup is: {:#?}", tup);
 
     let (_x, y, _z) = tup;
-    println!("The value of y is: {}", y);
+    println!("The value of tup.1 is: {}", y);
     println!("The value of tup.0 is: {}", tup.0);
 
     let a: [i32; 5] = [1, 2, 3, 4, 5];
@@ -47,5 +50,4 @@ fn main() {
     println!("The value of a[0] is: {}", a[0]);
     println!("The value of a[1] is: {}", a[1]);
     // Rust panics if you try to access an element outside of the array
-
 }
