@@ -47,7 +47,7 @@ fn main() {
 
     let s1 = String::from("hello with ref");
     let len = calculate_length_ref(&s1);
-    println!("The length of '{}' is {}.", s2, len);
+    println!("The length of '{}' is {}.", s1, len);
 }
 
 fn takes_ownership(some_string: String) {
