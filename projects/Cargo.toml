@@ -1,0 +1,13 @@
+[workspace]
+
+members = [
+    "control_flow",
+    "fibonacci",
+    "functions",
+    "guessing_game",
+    "hello_cargo",
+    "ownership_tutorial",
+    "slice",
+    "temperature",
+    "variables",
+]
