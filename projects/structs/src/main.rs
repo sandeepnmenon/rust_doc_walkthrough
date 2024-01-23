@@ -27,6 +27,20 @@ fn main() {
     };
     // If we had given new values for email and username for user2, then we could hvae used user1
     // Why? Because the remaining fields active and sign_in_count both implement the Copy trait
+
+    // Tuple structs. Useful when we need to give a tuple a name
+    struct Color(i32, i32, i32);
+    struct Point(i32, i32, i32);
+
+    let black = Color(0, 0, 0);
+    let origin = Point(0, 0, 0);
+    println!("Color black ({},{},{})", black.0, black.1, black.2);
+    println!("Origin  ({},{},{})", origin.0, origin.1, origin.2);
+
+    // Unit-Like Structs without any Fields. Useful when you need to implement a trait on some type but dont have any data to be stored
+    struct AlwaysEqual;
+
+    let subject = AlwaysEqual;
 }
 
 fn build_user(email: String, username: String) -> User {
