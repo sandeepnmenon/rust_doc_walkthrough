@@ -11,4 +11,5 @@ members = [
     "temperature",
     "variables",
     "structs",
+    "rectangles",
 ]
