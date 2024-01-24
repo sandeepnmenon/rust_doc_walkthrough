@@ -12,4 +12,5 @@ members = [
     "variables",
     "structs",
     "rectangles",
+    "enums",
 ]
