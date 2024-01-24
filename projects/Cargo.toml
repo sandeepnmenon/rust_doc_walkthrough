@@ -10,4 +10,6 @@ members = [
     "slice",
     "temperature",
     "variables",
+    "structs",
+    "rectangles",
 ]
