@@ -46,4 +46,17 @@ fn main() {
 
     let m = Message::Write(String::from("hello"));
     m.call();
+
+    // Option<T> enum
+    let _some_number = Some(5);
+    let _some_char = Some('e');
+
+    let _absent_number: Option<i32> = None;
+
+    let x: i8 = 5;
+    let y: Option<i8> = Some(3);
+
+    // let sum = x + y; // Does not run
+    // Cannot operate Option<T> with T directly. Need to explicitly convert.
+    // We can use the match expression to dictate different behavior for Some and None types of Option
 }
