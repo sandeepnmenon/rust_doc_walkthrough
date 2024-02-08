@@ -13,4 +13,5 @@ members = [
     "structs",
     "rectangles",
     "enums",
+    "match_control",
 ]
