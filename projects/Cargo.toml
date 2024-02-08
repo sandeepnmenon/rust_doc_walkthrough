@@ -15,4 +15,5 @@ members = [
     "enums",
     "match_control",
     "backyard",
+    "restaurant",
 ]
