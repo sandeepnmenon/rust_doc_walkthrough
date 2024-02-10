@@ -1,6 +1,7 @@
 mod front_of_house;
 
-pub use crate::front_of_house::hosting;
+// bringing crate::front_of_house::hosting into scope
+use crate::front_of_house::hosting;
 
 pub fn eat_at_restaurant() {
     //Absolute path
@@ -69,9 +70,6 @@ pub fn eat_at_restaurant_2() {
     let _order1 = back_of_house::Appetizer::Soup;
     let _order2 = back_of_house::Appetizer::Salad;
 }
-
-// bringing crate::front_of_house::hosting into scope
-use front_of_house::hosting;
 
 pub fn eat_at_restaurant_3() {
     hosting::add_to_waitlist();
