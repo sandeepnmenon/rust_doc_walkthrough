@@ -16,4 +16,5 @@ members = [
     "match_control",
     "backyard",
     "restaurant",
+    "vector",
 ]
