@@ -40,4 +40,25 @@ fn main() {
     for i in &mut v {
         *i += 50;
     }
+
+    // Using enum to store multipl types
+    enum SpreadSheetCell {
+        Int(i32),
+        Float(f64),
+        Text(String),
+    }
+
+    let _row = vec![
+        SpreadSheetCell::Int(3),
+        SpreadSheetCell::Float(3.14),
+        SpreadSheetCell::Text((String::from("Pi"))),
+    ];
+    // This is so that RUST needs to know what types will be in the vector at compile time.
+    // If we dont know, then enum wont work and we need to use the trait object which is not explained in this project
+
+    {
+        let _v = vec![1, 2, 3, 4];
+
+        // do stuff with v
+    } // <- v goes out of scope and is freed here
 }
