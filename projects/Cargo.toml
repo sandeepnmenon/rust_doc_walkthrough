@@ -17,4 +17,5 @@ members = [
     "backyard",
     "restaurant",
     "vector",
+    "strings",
 ]
