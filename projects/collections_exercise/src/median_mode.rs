@@ -32,6 +32,21 @@ fn mode(v: &Vec<i32>) -> i32 {
     mode
 }
 
+fn mode_v2(v: &Vec<i32>) -> i32 {
+    let mut map = HashMap::new();
+
+    for x in v {
+        let count = map.entry(x).or_insert(0);
+        *count += 1;
+    }
+
+    map.into_iter()
+        .max_by_key(|&(_, count)| count)
+        .map(|(val, _)| val)
+        .copied()
+        .unwrap_or(1)
+}
+
 pub fn median_mode(v: &Vec<i32>) -> (f32, i32) {
     (median(v), mode(v))
 }
