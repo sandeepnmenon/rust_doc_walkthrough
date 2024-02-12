@@ -1,14 +1,13 @@
 use std::collections::HashMap;
 
 fn median(v: &Vec<i32>) -> f32 {
-    let len = v.len();
-    println!("L: {} l/2 :{}", len, len / 2);
+    let mid = v.len() / 2;
     let mut sorted_v = v.clone();
     sorted_v.sort();
-    if len % 2 == 1 {
-        sorted_v[len / 2] as f32
+    if v.len() % 2 == 1 {
+        sorted_v[mid] as f32
     } else {
-        let sum = sorted_v[len / 2 - 1] + sorted_v[len / 2];
+        let sum = sorted_v[mid - 1] + sorted_v[mid];
         (sum as f32) / 2.0
     }
 }
