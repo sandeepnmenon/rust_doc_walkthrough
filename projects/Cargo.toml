@@ -20,4 +20,6 @@ members = [
     "strings",
     "hashmaps",
     "collections_exercise",
+    "error_handling",
+    "guessing_game_v2",
 ]
