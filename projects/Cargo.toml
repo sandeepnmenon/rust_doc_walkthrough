@@ -20,4 +20,5 @@ members = [
     "strings",
     "hashmaps",
     "collections_exercise",
+    "error_handling",
 ]
