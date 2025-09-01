@@ -24,5 +24,6 @@ members = [
     "guessing_game_v2",
     "generics",
     "traits", 
-    "lifetimes",
+    "lifetimes", 
+    "adder",
 ]
