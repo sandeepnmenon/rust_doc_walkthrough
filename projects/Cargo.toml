@@ -23,5 +23,6 @@ members = [
     "error_handling",
     "guessing_game_v2",
     "generics",
-    "traits",
+    "traits", 
+    "lifetimes",
 ]
