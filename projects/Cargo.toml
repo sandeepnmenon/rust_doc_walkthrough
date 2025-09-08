@@ -26,5 +26,6 @@ members = [
     "traits", 
     "lifetimes", 
     "adder", 
-    "closures",
+    "closures", 
+    "iterators",
 ]
