@@ -25,5 +25,6 @@ members = [
     "generics",
     "traits", 
     "lifetimes", 
-    "adder",
+    "adder", 
+    "closures",
 ]
